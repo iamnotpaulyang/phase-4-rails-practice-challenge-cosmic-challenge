@@ -134,7 +134,8 @@ scientist.
       "distance_from_earth": "12 light years",
       "nearest_star": "TauCeti",
       "image": "planet3"
-    },
+    }, (MAKE SERIALIZER TO INCLUDE THE PLANETS)
+    (RAILS G SERIALIZER scientist_with_planets)
     {
       "id": 2,
       "name": "Maxxor",
@@ -288,7 +289,7 @@ following properties in the body of the request:
 }
 ```
 
-If the `Mission` is created successfully, send back a response with the `planet` associated with the new `Mission` (contrary to convention, which normally dictates the response would include data about the _mission_ that was created):
+If the `Mission` is created successfully, send back a response with the `planet` associated with the new `Mission` (contrary to convention, which normally dictates the response would include data about the _mission_ that was created): *(.planet after render to return planets associated with the mission).*
 
 ```json
 {
